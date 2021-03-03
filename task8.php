@@ -19,4 +19,4 @@ function foo(int $n, int $x): array
     return $result;
 }
 
-print_r(foo(2, 5));
+print_r(foo(1, 10));

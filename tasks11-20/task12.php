@@ -2,7 +2,7 @@
 /**
  * You will be given a number and you will need to return it as a string in Expanded Form.
  * NOTE: All numbers will be whole numbers greater than 0.
- * 
+ *
  * @param int $num
  * @return string
  */
@@ -17,7 +17,7 @@ function foo(int $num): string
         $result .= $digit . str_repeat('0', count(array_slice($num, $key, -1))) . ' + ';
     }
 
-    return substr($result, 0, -2);
+    return substr($result, 0, -3);
 }
 
-print foo(70304);
+print foo(12);

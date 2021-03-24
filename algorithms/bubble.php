@@ -1,5 +1,11 @@
 <?php
-function foo(array $arr): array
+/**
+ * Bubble sort
+ *
+ * @param array $arr
+ * @return array
+ */
+function bubble(array $arr): array
 {
     for ($i = 0; $i < $size = count($arr); $i++) {
         for ($j = $size - 1; $j > $i; $j--) {
@@ -14,4 +20,4 @@ function foo(array $arr): array
     return $arr;
 }
 
-print_r(foo($arr = [4, 9, 7, 6, 2, 3, 1, 16]));
+print_r(bubble($arr = [4, 9, 7, 6, 2, 3, 1, 16]));
